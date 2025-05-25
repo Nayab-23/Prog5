@@ -1,0 +1,43 @@
+FEEDBACK:
+
+Good exception handling in GroceriesFileReader.
+    Consider handling the case when the input line has a valid format
+	for the value via catching NumberFormatException.
+
+
+Good recursive implementation of the class SubsetSum findSubset() method.
+
+
+Good documentation of you classes and methods.
+
+
++0.5 Excellent overview of your approach and description of the purpose of 
+     each test case in your RUN and README file.
+
+
+
+Extra Credit Opportunity:
++0 Incomplete implementation results in exception. See sample output below.
+   Incomplete testing of your implementation in RUN.txt file.   
+        
+-Bita.
+
+
+sample output 1:
+Welcome! We have over 59600 songs in FoothillTunesStore!
+
+Enter the duration of your play list (in seconds):
+100
+Exception in thread "main" java.lang.StackOverflowError
+	at java.base/java.util.stream.ReduceOps$13ReducingSink.begin(ReduceOps.java:744)
+	at java.base/java.util.stream.Sink$ChainedReference.begin(Sink.java:256)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:555)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:546)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.DoublePipeline.collect(DoublePipeline.java:541)
+	at java.base/java.util.stream.DoublePipeline.sum(DoublePipeline.java:450)
+	at cs1c.SubsetSum.findSubsetSongsHelper(SubsetSum.java:43)
+	at cs1c.SubsetSum.findSubsetSongsHelper(SubsetSum.java:54)
+	at cs1c.SubsetSum.findSubsetSongsHelper(SubsetSum.java:57)
+	...

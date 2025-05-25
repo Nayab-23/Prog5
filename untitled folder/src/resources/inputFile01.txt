@@ -1,0 +1,5 @@
+apple,1.00
+bread,2.50
+eggs,3.00
+juice,4.50
+cheese,5.00
