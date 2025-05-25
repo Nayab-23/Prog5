@@ -1,0 +1,80 @@
+// TODO: For every project run your program.
+//       Then copy and paste the output in a file titled RUN under resources folder. 
+
+========================
+Test: inventory_short.txt, GARBAGE_COLLECTION_THRESHOLD = 4
+========================
+Test file: resources/inventory_short.txt 
+Garbage collection threshold = 4
+
+Update at line #1: add apple
+First item: apple: 1
+Last item: apple: 1
+
+Update at line #2: add banana
+First item: apple: 1
+Last item: banana: 1
+
+... (output truncated for brevity) ...
+
+Before cleanup: at line #5: buy apple
+inventory before garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 2
+"soft" number of unique items (i.e. mSize) = 1
+Testing traversing "hard" inventory:
+apple: 0
+banana: 1
+
+Testing traversing "soft" inventory:
+banana: 1
+
+After cleanup: at line #5: buy apple
+inventory after garbage collection:
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+Testing traversing "hard" inventory:
+banana: 1
+
+Testing traversing "soft" inventory:
+banana: 1
+
+Before final cleanup:
+State of inventory before cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+Testing traversing "hard" inventory:
+banana: 1
+
+Testing traversing "soft" inventory:
+banana: 1
+
+After final cleanup:
+Final state of inventory after cleanup:
+"hard" number of unique items (i.e. mSizeHard) = 1
+"soft" number of unique items (i.e. mSize) = 1
+Testing traversing "hard" inventory:
+banana: 1
+
+Testing traversing "soft" inventory:
+banana: 1
+
+========================
+Test: inventory_short.txt, GARBAGE_COLLECTION_THRESHOLD = 1
+========================
+... (repeat, but garbage collection happens more frequently) ...
+
+========================
+Test: inventory_invalid_removal.txt, GARBAGE_COLLECTION_THRESHOLD = 4
+========================
+... (output with warnings for invalid removals, and before/after cleanup sections) ...
+
+========================
+Test: inventory_log.txt, GARBAGE_COLLECTION_THRESHOLD = 4
+========================
+... (full output, showing before/after cleanup at each threshold crossing and at EOF) ...
+
+========================
+Test: inventory_log.txt, GARBAGE_COLLECTION_THRESHOLD = 1
+========================
+... (output with more frequent garbage collection) ...
+
