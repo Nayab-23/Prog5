@@ -1,0 +1,81 @@
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/inputFile01.txt 
+budget: 0.5
+
+NOTES: Testing set of elements found where no element
+    exists with value less than budget.
+
+
+ -----------------------------------------------------
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 1 ms : 629417 ns
+Purchased grocery prices are:
+[]
+Done with ShoppingBag.
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/inputFile01.txt 
+budget: 16
+
+NOTES: Testing set of elements found with sums
+       to exactly to target budget.
+-----------------------------------------------------
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 8 ms : 964375 ns
+Purchased grocery prices are:
+[1.0, 2.5, 3.0, 4.5, 5.0]
+Done with ShoppingBag.
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/inputFile01.txt 
+budget: 2000
+
+NOTES: Testing target budget > sum of all elements.
+-----------------------------------------------------
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 12 ms : 411750 ns
+Purchased grocery prices are:
+[1.0, 2.5, 3.0, 4.5, 5.0]
+Done with ShoppingBag
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inputFile02.txt 
+budget: 28.5
+
+NOTES: Testing set of elements found with sums
+       to exactly to target budget.
+---------------------------------------------------
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 14 ms : 302834 ns
+Purchased grocery prices are:
+[6.0, 2.5, 5.5, 4.5, 7.0, 3.0]
+Done with ShoppingBag.
+
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inputFile02.txt 
+budget: 28
+
+NOTES: Testing target budget returning closest match.
+---------------------------------------------------
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 10 ms : 989583 ns
+Purchased grocery prices are:
+[6.0, 5.5, 4.5, 7.0, 3.0]
+Done with ShoppingBag.
+
+---------------------------------------------------
+---------------------------------------------------
+Test file: resources/inputFile02.txt 
+budget: 400
+
+NOTES: Testing target budget > sum of all elements.
+---------------------------------------------------
+
+Algorithm Elapsed Time: 0 hrs : 0 mins : 0 sec : 12 ms : 446917 ns
+Purchased grocery prices are:
+[6.0, 2.5, 5.5, 4.5, 7.0, 3.0]
+Done with ShoppingBag.

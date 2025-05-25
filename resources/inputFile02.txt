@@ -1,0 +1,6 @@
+milk,6.00
+bread,2.50
+cheese,5.50
+juice,4.50
+cereal,7.00
+eggs,3.00
